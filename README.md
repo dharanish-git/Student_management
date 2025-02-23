@@ -1,167 +1,92 @@
-# Django Student Management System (beta)
-This is a Simple Student Management System Developed for Educational Purpose using Python (Django).
-Feel free to make changes based on your requirements.
+Django Student Management System
+A simple Student Management System built using Python (Django) for educational purposes.
 
-[Project Demo on YouTube](https://www.youtube.com/watch?v=kArCR96m7uo "Django Student Management System Demo")
+Features
+A. Admin Users Can:
+View summary charts of student and staff performance, courses, subjects, and attendance.
+Manage Staff (Add, Update, Delete).
+Manage Students (Add, Update, Delete).
+Manage Courses (Add, Update, Delete).
+Manage Subjects (Add, Update, Delete).
+Manage Sessions (Add, Update, Delete).
+View Student Attendance.
+Review and reply to Student/Staff Feedback.
+Approve or Reject Student/Staff Leave.
+B. Staff/Teachers Can:
+View summary charts related to their students, subjects, and leave status.
+Take/Update Student Attendance.
+Add/Update Student Results.
+Apply for Leave.
+Send Feedback to Admin.
+C. Students Can:
+View attendance reports.
+View exam results.
+Apply for Leave.
+Send Feedback to Admin.
+Installation & Setup
+Pre-requisites:
+Install Git → Download Git
+Install Python (latest version) → Download Python
+Install Pip (Python Package Manager) → Install Pip
+1. Clone the Repository
+sh
+Copy
+Edit
+git clone <your-repo-url>
+cd student-management-system
+2. Create a Virtual Environment
+Install virtualenv:
 
-I've created this project while learnging Django and followed tutorial series from **SuperCoders**
+sh
+Copy
+Edit
+pip install virtualenv
+Create and activate the virtual environment:
 
-And if you like this project then ADD a STAR ⭐️  to this project 👆
+For Windows:
 
-## Features of this Project
+sh
+Copy
+Edit
+python -m venv venv
+venv\Scripts\activate
+For Mac/Linux:
 
-### A. Admin Users Can
-1. See Overall Summary Charts of Stuudents Performance, Staffs Perfomrances, Courses, Subjects, Leave, etc.
-2. Manage Staffs (Add, Update and Delete)
-3. Manage Students (Add, Update and Delete)
-4. Manage Course (Add, Update and Delete)
-5. Manage Subjects (Add, Update and Delete)
-6. Manage Sessions (Add, Update and Delete)
-7. View Student Attendance
-8. Review and Reply Student/Staff Feedback
-9. Review (Approve/Reject) Student/Staff Leave
+sh
+Copy
+Edit
+python3 -m venv venv
+source venv/bin/activate
+3. Install Dependencies
+sh
+Copy
+Edit
+pip install -r requirements.txt
+4. Configure Allowed Hosts
+In settings.py, update the ALLOWED_HOSTS list:
 
-### B. Staff/Teachers Can
-1. See the Overall Summary Charts related to their students, their subjects, leave status, etc.
-2. Take/Update Students Attendance
-3. Add/Update Result
-4. Apply for Leave
-5. Send Feedback to HOD
-
-### C. Students Can
-1. See the Overall Summary Charts related to their attendance, their subjects, leave status, etc.
-2. View Attendance
-3. View Result
-4. Apply for Leave
-5. Send Feedback to HOD
-
-
-## Support Developer
-1. Subscribe & Share my YouTube Channel - https://bit.ly/vijay-thapa-online-courses
-2. Add a Star 🌟  to this 👆 Repository
-
-
-## Donate
-
-**[PayPal](https://bit.ly/support-vijay-thapa)**
-
-**[Buy me a Coffee  ☕️](https://www.buymeacoffee.com/vijaythapa)**
-
-**Donate by wire transfer:** E-Mail at *donate@vijaythapa.com* for wire transfer details. 
-
-
-## How to Install and Run this project?
-
-### Pre-Requisites:
-1. Install Git Version Control
-[ https://git-scm.com/ ]
-
-2. Install Python Latest Version
-[ https://www.python.org/downloads/ ]
-
-3. Install Pip (Package Manager)
-[ https://pip.pypa.io/en/stable/installing/ ]
-
-*Alternative to Pip is Homebrew*
-
-### Installation
-**1. Create a Folder where you want to save the project**
-
-**2. Create a Virtual Environment and Activate**
-
-Install Virtual Environment First
-```
-$  pip install virtualenv
-```
-
-Create Virtual Environment
-
-For Windows
-```
-$  python -m venv venv
-```
-For Mac
-```
-$  python3 -m venv venv
-```
-
-Activate Virtual Environment
-
-For Windows
-```
-$  source venv/scripts/activate
-```
-
-For Mac
-```
-$  source venv/bin/activate
-```
-
-**3. Clone this project**
-```
-$  git clone https://github.com/vijaythapa333/django-student-management-system.git
-```
-
-Then, Enter the project
-```
-$  cd django-student-management-system
-```
-
-**4. Install Requirements from 'requirements.txt'**
-```python
-$  pip install -r requirements.txt
-```
-
-**5. Add the hosts**
-
-- Got to settings.py file 
-- Then, On allowed hosts, Add [‘*’]. 
-```python
+python
+Copy
+Edit
 ALLOWED_HOSTS = ['*']
-```
-*No need to change on Mac.*
+5. Run Migrations & Start Server
+sh
+Copy
+Edit
+python manage.py migrate
+python manage.py runserver
+6. Create Super User
+sh
+Copy
+Edit
+python manage.py createsuperuser
+Enter the required details (email, username, password).
 
+Default Login Credentials
+User Role	Email	Password
+Admin (HOD)	admin@gmail.com	admin
+Staff	staff@gmail.com	staff
+Student	student@gmail.com	student
+License
+This project is open-source and free to use for educational purposes.
 
-**6. Now Run Server**
-
-Command for PC:
-```python
-$ python manage.py runserver
-```
-
-Command for Mac:
-```python
-$ python3 manage.py runserver
-```
-
-**7. Login Credentials**
-
-Create Super User (HOD)
-```
-$  python manage.py createsuperuser
-```
-Then Add Email, Username and Password
-
-**or Use Default Credentials**
-
-*For HOD /SuperAdmin*
-Email: admin@gmail.com
-Password: admin
-
-*For Staff*
-Email: staff@gmail.com
-Password: staff
-
-*For Student*
-Email: student@gmail.com
-Password: student
-
-
-
-## For Sponsor or Projects Enquiry
-1. Email - hi@vijaythapa.com
-2. LinkedIn - [vijaythapa](https://www.linkedin.com/in/vijaythapa "Vijay Thapa on LinkedIn")
-
-"# Student_management" 
-"# Student_management" 
-"# Student_management" 
